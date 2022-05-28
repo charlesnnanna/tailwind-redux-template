@@ -9,7 +9,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 export default function Header() {
   return (
     <>
-      <div className='flex rounded-2xl p-6 flex-row justify-between  border w-full border  bg-darkBrown'>
+      <div className='flex rounded-2xl p-6 flex-row justify-between  w-full border  bg-darkBrown'>
           <div className=''>
               <h2 className='text-white text-sm'>
                   My balance

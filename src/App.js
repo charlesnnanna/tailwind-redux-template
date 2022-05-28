@@ -7,8 +7,7 @@ function App() {
     <>
       <div className="flex flex-col items-center m-0 justify-center h-full border  w-full bg-veryLightBrown">
           <TailwindFunPage/>
-      </div>
-       
+      </div>  
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import Bar from './Bar'
 
 
-
+//Dummy data
 const data = [
     {
       day: "mon",
@@ -34,18 +34,20 @@ const data = [
     }
   ]
 
-  const reversedData = data.reverse()
+const reversedData = data.reverse()
 
+
+//The Data Component
 export default function Data() {
   return (
       <>
-             <div className='w-full p-7 border mt-8 rounded-2xl flex flex-col bg-white'>
+             <div className='w-full p-7  mt-8 rounded-2xl flex flex-col bg-white'>
                 <div>
                     <h2 className='text-2xl font-bold text-black'>Spending - Last 7 days</h2>
                 </div>
 
-                <div className='flex self-center flex-row border relative h-72 w-full'>
-                    <div className=' flex flex-row mt-8 transform rotate-180 justify-around  w-full border absolute bottom-6'>
+                <div className='flex self-center flex-row  relative h-72 w-full'>
+                    <div className=' flex flex-row mt-8 transform rotate-180 justify-around  w-full absolute bottom-6'>
                             {
                                 reversedData.map(function(item, index){
                                     return(
@@ -55,12 +57,12 @@ export default function Data() {
                             }
                     </div>
 
-                    <div className='absolute bottom-0 flex justify-around border w-full flex-row-reverse'>
+                    <div className='absolute bottom-0 flex justify-around  w-full flex-row-reverse'>
                             {
                               data.map(function(item, index){
                                   return(
                                          <div  key={index}>
-                                            <p className='text-sm border w-7 sm:w-10 md:w-11  text-center'>{item.day}</p>
+                                            <p className='text-sm  w-7 sm:w-10 md:w-11  text-center'>{item.day}</p>
                                         </div>             
                                   )
                               })
